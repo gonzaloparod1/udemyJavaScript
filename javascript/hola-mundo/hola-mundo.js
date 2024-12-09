@@ -1,1 +1,0 @@
-document.write("Hola mundo desde fichero externo");
