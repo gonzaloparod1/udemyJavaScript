@@ -12,7 +12,13 @@ function cambiarColor() {
 }
 
 // Evento: Click
-boton.addEventListener('click', cambiarColor);
+boton.addEventListener('click', function() {
+    cambiarColor();
+    console.log(this);
+    boton.style.padding = '10px';
+    this.style.border = '10px solid black';
+});
+
 
 // Evento: Doble click
 boton.addEventListener('dblclick', () => {
